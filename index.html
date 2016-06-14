@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HeritageMasonry.com.au</title>
+
+    <link href="css/library/bootstrap.min.css" rel="stylesheet" /><!--Custom Bootstrap-->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="fonts/icon_sosa/fontSosa.css" rel="stylesheet" />
+
+    <!--Angular-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+    <!--Light Gallery - http://sachinchoolur.github.io/lightGallery/docs/ says to place the CSS file in the HEAD -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/css/lightgallery.min.css' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+    <div id="entirePage" class="container-fluid" ng-controller="ScrollController">
+        <!--not given container-fluid class so that the background colour won't have padding-->
+
+
+        <div id="customNav" class="row noPadding">
+            <!--NavBar-->
+            <div id=" contactcol" class="centerText">
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 noPadding contactCol">
+                    <a href="tel:+610474313909">
+                        <div class="contactBox">
+                            <span class="icon_sosa smartphone"></span>
+                            <span class="contactText">
+                                Clive: +61&nbsp;0474&nbsp;313&nbsp;909
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 noPadding contactCol">
+                    <a href="tel:+610405948816">
+                        <div class="contactBox" id="contactBox2">
+                            <span class="icon_sosa smartphone"></span>
+                            <span class="contactText">
+                                Tony: +61&nbsp;0405&nbsp;948&nbsp;816
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <a href="mailto:heritagemasonrywa@gmail.com">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 noPadding contactCol">
+                        <div class="contactBox" id="contactBox2">
+                            <span class="icon_sosa envelope"></span>
+                            <span class="contactText">heritagemasonrywa@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div> <!-- /customNav -->
+
+        <div id="allContentUnderNavBar">
+
+            <div id="galleryLink">
+                <a href="#galleryContainer">
+                    <!--<div class="glyphicon glyphicon-camera" aria-hidden="true"></div>-->
+                    <i class="icon-camera"></i>
+                    <div class="cameraIconCaption alignRight">Project <br /> Gallery</div>
+                    <div class="cameraIconCaption"></div>
+                </a>
+            </div>
+
+            <div id="backgroundImage">
+                <img id="customJumbotron" src="background.jpg" />
+
+                <div id="pageCaption" class="centerText">
+                    <a target=" _blank" href="#">
+                        <span id="companyName" class="textOnImage">Heritage Masonry</span><span id="dotcom"></span>
+                        <div id="titleSubHeading">
+                        </div>
+                    </a>
+                </div>
+            </div><!--/backgroundImage-->
+
+            <div class="row">
+                <div id="welcomeAndServices">
+                    <div id="welcomeAndServicesText" class="centerText">
+                        <p>
+                            For over 12 years, Master Stonemasons Clive, and I, Tony Nolan have been passionately devoted to our craft.
+                            Our work includes designing and building dry stone and mortared walls and, among other projects, intricate garden features and fireplaces.
+                        </p>
+                        <p>
+                            Please take a look at some of our more recent work in our gallery below.
+                            We are based in Perth but we can also provide our services nationwide. If you are interested in discussing a project please don't hesitate to contact either myself, Tony or Clive on the phone numbers or email above. Thanks for stopping by!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="galleryContainer">
+                        <div id="galleryHeading">
+                            Recent Projects
+                        </div>
+                        <div id="lightgallery">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!--/allContentUnderNavBar-->
+
+    </div><!--/entirePage-->
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!--Core/Main Light Gallery File-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/js/lightgallery.min.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/js/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/js/lg-fullscreen.min.js"></script>
+
+    <!--My js files - don't need for now
+    <script src="accordionSections/expandAccordionSectionsModule.js"></script>
+    <script src="accordionSections/changeArrowsAccordionSectionsModule.js"></script>
+    <script src="gallery/galleryImages.js"></script>
+    <script src="js/anchorScrollExample.js"></script>-->
+
+
+
+    <script>
+
+        var imagesLocation = 'gallery/images/';
+        var myGalleryArray = [
+            { ID: 0104, image: 'house1C', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0106, image: 'house1D', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0108, image: 'house1E', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0110, image: 'house1F', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0112, image: 'house1G_second_story_corner', fileFormat: '.jpg', altTag: 'House1 second story corner' },
+            { ID: 0114, image: 'house1_walls_and_steps', fileFormat: '.jpg', altTag: 'House 1 walls and steps' },
+             { ID: 0100, image: 'house1', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0102, image: 'house1B', fileFormat: '.jpg', altTag: 'House 1' },
+            { ID: 0116, image: 'house3', fileFormat: '.jpg', altTag: 'House 3' },
+            { ID: 0118, image: 'house3_close_up1', fileFormat: '.jpg', altTag: 'House 3 close up' },
+            { ID: 0120, image: 'house3_close_up2', fileFormat: '.jpg', altTag: 'House 3 close up' },
+            { ID: 0122, image: 'house4', fileFormat: '.jpg', altTag: 'House 4' },
+            { ID: 0124, image: 'house5', fileFormat: '.jpg', altTag: 'House 5' },
+            { ID: 0126, image: 'house5_close_up1', fileFormat: '.jpg', altTag: 'House 5 close up 1' },
+            { ID: 0128, image: 'house5_close_up2', fileFormat: '.jpg', altTag: 'House 5 close up 2' },
+            { ID: 0130, image: 'house6_close_up3', fileFormat: '.jpg', altTag: 'House 6 close up 3' },
+            { ID: 0132, image: 'house7D', fileFormat: '.png', altTag: 'House 7' },
+             { ID: 0138, image: 'house7_construction2', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0140, image: 'house7_construction3', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0142, image: 'house7_construction4', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0144, image: 'house7_contruction1', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0134, image: 'house7E', fileFormat: '.png', altTag: 'House 7' },
+            { ID: 0136, image: 'house7F', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0146, image: 'house7_endA', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0148, image: 'house7_endB', fileFormat: '.png', altTag: 'House 7' },
+            { ID: 0150, image: 'house7_front1', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0152, image: 'house7_front2', fileFormat: '.png', altTag: 'House 7' },
+            { ID: 0154, image: 'house7_front3', fileFormat: '.png', altTag: 'House 7' },
+            { ID: 0156, image: 'house7_front_door', fileFormat: '.jpg', altTag: 'House 7' },
+            { ID: 0158, image: 'house7_side3', fileFormat: '.png', altTag: 'House 7' },
+            { ID: 0160, image: 'house8', fileFormat: '.jpg', altTag: 'House8' },
+            { ID: 0162, image: 'house9_close_up', fileFormat: '.jpg', altTag: 'House9 close up' },
+            { ID: 0164, image: 'house11', fileFormat: '.jpg', altTag: 'House 11' },
+            { ID: 0166, image: 'house12_windows_close-up', fileFormat: '.jpg', altTag: 'House 12 windows close-up' },
+            { ID: 0168, image: 'house13', fileFormat: '.jpg', altTag: 'House 13' },
+            { ID: 0170, image: 'house_wall', fileFormat: '.jpg', altTag: 'House wall' },
+            { ID: 0200, image: 'long_building', fileFormat: '.jpg', altTag: 'Long building' },
+            { ID: 0210, image: 'path1', fileFormat: '.jpg', altTag: 'Path1' },
+            { ID: 0220, image: 'pillar1', fileFormat: '.jpg', altTag: 'Pillar1' },
+            { ID: 0222, image: 'pillars_and_gate1A', fileFormat: '.jpg', altTag: 'Pillars and gate 1' },
+            { ID: 0224, image: 'pillar_and_wall2A', fileFormat: '.jpg', altTag: 'Pillar and wall 2' },
+            { ID: 0226, image: 'pillar_and_wall2B', fileFormat: '.jpg', altTag: 'Pillar and wall 2' },
+               { ID: 0001, image: 'brick_fireplace_covered_with_stone_veneer', fileFormat: '.jpg', altTag: 'Brick fireplace covered with stone veneer' },
+            { ID: 0002, image: 'bungalow_side_wall', fileFormat: '.jpg', altTag: 'Bungalow side wall' },
+            { ID: 0003, image: 'bungalow_wall', fileFormat: '.jpg', altTag: 'Bungalow wall' },
+            { ID: 0010, image: 'chimney1A', fileFormat: '.jpg', altTag: 'Chimney 1' },
+            { ID: 0011, image: 'chimney1B', fileFormat: '.jpg', altTag: 'Chimney 1' },
+            { ID: 0012, image: 'chimney2', fileFormat: '.jpg', altTag: 'Chimney 2' },
+            { ID: 0020, image: 'construction_site', fileFormat: '.jpg', altTag: 'Construction site' },
+            { ID: 0021, image: 'construction_site_floor_level', fileFormat: '.jpg', altTag: 'Construction site floor level' },
+            { ID: 0030, image: 'corner_stones', fileFormat: '.jpg', altTag: 'Corner stones' },
+            { ID: 0040, image: 'cottage2', fileFormat: '.jpg', altTag: 'Cottage 2' },
+            { ID: 0045, image: 'footbridge_close_up', fileFormat: '.jpg', altTag: 'Footbridge close up' },
+            { ID: 0050, image: 'foot_bridge', fileFormat: '.jpg', altTag: 'Foot bridge' },
+            { ID: 0055, image: 'garage1A', fileFormat: '.png', altTag: 'Garage 1' },
+            { ID: 0056, image: 'garage1B', fileFormat: '.png', altTag: 'Garage 1 ' },
+            { ID: 0057, image: 'garage1C', fileFormat: '.png', altTag: 'Garage 1 ' },
+            { ID: 0058, image: 'garage1_frontA', fileFormat: '.png', altTag: 'Garage1 front' },
+            { ID: 0059, image: 'garage1_frontB', fileFormat: '.png', altTag: 'Garage1 front' },
+            { ID: 0060, image: 'garage1_side', fileFormat: '.png', altTag: 'Garage 1 side' },
+            { ID: 0070, image: 'garden_wall1', fileFormat: '.jpg', altTag: 'Garden wall 1' },
+            { ID: 0071, image: 'garden_wall2A', fileFormat: '.jpg', altTag: 'Garden wall 2 ' },
+            { ID: 0072, image: 'garden_wall2B', fileFormat: '.jpg', altTag: 'Garden wall 2' },
+            { ID: 0073, image: 'garden_wall2C', fileFormat: '.jpg', altTag: 'Garden wall 2' },
+            { ID: 0074, image: 'garden_wall2D', fileFormat: '.jpg', altTag: 'Garden wall 2' },
+            { ID: 0075, image: 'garden_wall2E', fileFormat: '.jpg', altTag: 'Garden wall 2' },
+            { ID: 0076, image: 'garden_wall6', fileFormat: '.jpg', altTag: 'Garden wall 6' },
+            { ID: 0077, image: 'garden_wall_and_borders1', fileFormat: '.jpg', altTag: 'Garden wall and borders 1' },
+            { ID: 0078, image: 'garden_wall_and_patio1', fileFormat: '.jpg', altTag: 'Garden wall and patio 1' }
+        ];
+
+        var imageURL;
+        for (var i = 0; i <= myGalleryArray.length; i++) {
+
+            imageURL = imagesLocation + myGalleryArray[i].image + myGalleryArray[i].fileFormat;
+            //imageLocation + image name + file format
+            //image name and file format were seperated to enable a thumbnail URL to be derived from imageLocation + image name + '.jpeg' (below)..
+            //.. if they weren't seperated, something like this could have happened: tn_ + imagename.png = tn_imagename.png. This thumnail wouldn't..
+            //.. exist because all thumbnails are .jpg
+
+            $('#lightgallery').append(
+                 '<a href=' + imageURL + ' class="item customThumbnail">' +
+                '<img src=' + imagesLocation + 'tn_' + myGalleryArray[i].image + '.jpg' + ' class="item galleryThumbnail" />' +
+            '</a>'
+             );
+
+        }
+
+
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightgallery").lightGallery();
+        });
+    </script>
+
+
+
+</body>
+</html>
