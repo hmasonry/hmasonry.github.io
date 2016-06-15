@@ -78,48 +78,50 @@
 
         <div id="allContentUnderNavBar">
 
-                <div id="galleryLink">
-                    <a href="#galleryContainer">
-                        <!--<div class="glyphicon glyphicon-camera" aria-hidden="true"></div>-->
-                        <i class="icon-camera"></i>
-                        <div class="cameraIconCaption alignRight">Project <br /> Gallery</div>
-                        <div class="cameraIconCaption"></div>
+            <div id="galleryLink">
+                <a href="#galleryContainer">
+                    <!--<div class="glyphicon glyphicon-camera" aria-hidden="true"></div>-->
+                    <i class="icon-camera"></i>
+                    <div class="cameraIconCaption alignRight">Project <br /> Gallery</div>
+                    <div class="cameraIconCaption"></div>
+                </a>
+            </div>
+
+            <div id="backgroundImage">
+                <img id="customJumbotron" src="background.jpg" />
+
+                <div id="pageCaption" class="centerText">
+                    <a target=" _blank" href="#">
+                        <span id="companyName" class="textOnImage">Heritage Masonry</span><span id="dotcom"></span>
+                        <div id="titleSubHeading">
+                        </div>
                     </a>
                 </div>
+            </div><!--/backgroundImage-->
 
-                <div id="backgroundImageSection">
-                    <img id="customJumbotron" src="background.jpg" />
-
-                    <div id="pageCaption" class="centerText">
-                        <a target=" _blank" href="#">
-                            <span id="companyName" class="textOnImage">Heritage Masonry</span><span id="dotcom"></span>
-                            <div id="titleSubHeading">
-                            </div>
-                        </a>
-                    </div>
-                </div><!--/backgroundImage-->
-        <!--
             <div class="row">
                 <div id="welcomeAndServices">
                     <div id="welcomeAndServicesText" class="centerText">
                         <p>
                             For over 12 years, Master Stonemasons Clive, and I, Tony Nolan have been passionately devoted to our craft.
-                            We specialise in both traditional and contempory designs, building dry stone and mortared walls and, among other projects, intricate garden features and fireplaces.
+                            Our work includes designing and building dry stone and mortared walls and, among other projects, intricate garden features and fireplaces.
                         </p>
                         <p>
                             Please take a look at some of our more recent work in our gallery below.
-                            We are based in Perth but we also provide our services nationwide. If you are interested in discussing a project please don't hesitate to contact either myself, Tony or Clive on the phone numbers or email above. 
+                            We are based in Perth but we can also provide our services nationwide. If you are interested in discussing a project please don't hesitate to contact either myself, Tony or Clive on the phone numbers or email above. Thanks for stopping by!
                         </p>
                     </div>
                 </div>
             </div>
-            -->
+
             <div class="row">
-                <div id="galleryContainer">
-                    <div id="galleryHeading">
-                        Recent Projects
-                    </div>
-                    <div id="lightgallery">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="galleryContainer">
+                        <div id="galleryHeading">
+                            Recent Projects
+                        </div>
+                        <div id="lightgallery">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,6 +158,9 @@
 
         var imagesLocation = 'gallery/images/';
         var myGalleryArray = [
+
+
+
             { ID: 0104, image: 'house1C', fileFormat: '.jpg', altTag: 'House 1' },
             { ID: 0106, image: 'house1D', fileFormat: '.jpg', altTag: 'House 1' },
             { ID: 0108, image: 'house1E', fileFormat: '.jpg', altTag: 'House 1' },
@@ -164,6 +169,8 @@
             { ID: 0114, image: 'house1_walls_and_steps', fileFormat: '.jpg', altTag: 'House 1 walls and steps' },
              { ID: 0100, image: 'house1', fileFormat: '.jpg', altTag: 'House 1' },
             { ID: 0102, image: 'house1B', fileFormat: '.jpg', altTag: 'House 1' },
+
+
             { ID: 0116, image: 'house3', fileFormat: '.jpg', altTag: 'House 3' },
             { ID: 0118, image: 'house3_close_up1', fileFormat: '.jpg', altTag: 'House 3 close up' },
             { ID: 0120, image: 'house3_close_up2', fileFormat: '.jpg', altTag: 'House 3 close up' },
@@ -255,6 +262,25 @@
     </script>
 
 
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
 
+        @media only screen and (max-width : 480px) {
+            /* Smartphone view: 1 tile */
+            img {
+                width: 155px;
+                height: 155px;
+            }
+        }
+
+        @media only screen and (max-width : 720px) {
+            #galleryLink {
+                visibility: hidden;
+            }
+        }
+    </style>
 </body>
 </html>
