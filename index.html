@@ -94,7 +94,7 @@
 
 
                 <div id="companyNameContainer" class="textOnImage centerText">
-                    <span id="companyNameFirstLetter"><embed src="castleH.svg" style="width:75px;" /></span>
+                    <span id="companyNameFirstLetter"><embed id="castleH" src="castleH.svg" /></span>
                     <span id="companyNameStandardFont">eritage Masonry</span><span id="dotcom"></span>
                     <div id="titleSubHeading"></div>
 
@@ -103,10 +103,25 @@
                 <style>
                     #companyNameContainer #companyNameStandardFont {
                         color: white;
-                        font-size: 5em;
-                        /*color: #fff6f0; white / orange */
                         font-family: 'Century Gothic';
-                        letter-spacing: 5px;
+                        font-size: 2.5em;
+                        letter-spacing: 2px;
+                    }
+
+                    #castleH {
+                        width: 45px;
+                    }
+
+                    @media only screen and (min-width : 720px) {
+                        #companyNameContainer #companyNameStandardFont {
+                            font-size: 5em;
+                            /*color: #fff6f0; white / orange */
+                            letter-spacing: 5px;
+                        }
+
+                        #castleH {
+                            width: 75px;
+                        }
                     }
                 </style>
 
